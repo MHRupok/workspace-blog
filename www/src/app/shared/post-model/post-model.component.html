@@ -1,0 +1,26 @@
+<!-- Blog post-->
+<div class="row">
+    <div class="col-lg-6" *ngFor="let item of blogList ; let i = index">
+
+        <div class="card mb-4">
+
+            <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg"
+                    alt="..." /></a>
+            <div class="card-body">
+                <div class="small text-muted">{{item.created | date}}</div>
+
+                <h2 class="card-title h4">{{item.title}}</h2>
+                <h5 class="card-title h6"><small>Author: </small> {{item.author}}</h5>
+                <i class="far fa-caret-square-up"></i> {{item.upvote}}
+                &nbsp;&nbsp;
+                <i class="far fa-caret-square-down"></i> {{item.downvote}}
+
+
+                <p class="card-text">{{ (item.content.length>50)? (item.content | slice:0:50)+'..':(item.content) }}</p>
+                <a class="btn btn-primary" (click)="showDetails(item.id)">Read more →</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,11 @@
+.fa-caret-square-up:hover{
+    cursor: pointer !important;
+    background-color: green;
+    
+}
+
+.fa-caret-square-down:hover{
+    cursor: pointer !important;
+    background-color: red;
+    
+}

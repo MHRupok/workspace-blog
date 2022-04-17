@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: transparent !important;">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                <li class="nav-item"><button class="btn btn-danger" (click)="logout()">Logout</button></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<header class="py-5 bg-light border-bottom mb-4">
+    <div class="container">
+        <div class="text-center my-5">
+            <h1 class="fw-bolder">Welcome to Blog Home!</h1>
+            <p class="lead mb-0">A Bootstrap 5 starter layout for your next blog homepage</p>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <form>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Title</label>
+                    <div class="col-sm-10">
+                        <input type="text" #title class="form-control" placeholder="Title">
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Content</label>
+                    <div class="col-sm-10">
+                        <!-- <input type="text" class="form-control" placeholder="Content" style="min-height: 500px;" > -->
+                        <textarea name="" id="" #content style="width: 100%;" rows="10"></textarea>
+                    </div>
+                </div>
+                <br>
+
+
+                <div class="form-group row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-10">
+                        <a class="btn btn-primary" (click)="postBlog(title.value, content.value)" >Post</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
