@@ -1,6 +1,6 @@
 # workspace-blog
 
-How to run:
+How to run
 -clone the repository.
 
 Install & Config database:
