@@ -1,7 +1,8 @@
 # workspace-blog
 
-How to run
-- clone the repository.
+How to run [ Ubuntu ]
+- clone the repository
+- open terminal
 
 Install & Config database:
 - sudo apt update
