@@ -1,7 +1,7 @@
 # workspace-blog
 
 How to run
--clone the repository.
+- clone the repository.
 
 Install & Config database:
 - sudo apt update
